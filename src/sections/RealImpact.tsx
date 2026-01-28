@@ -4,27 +4,27 @@ import { FileText, TrendingDown, Share2, Clock, BarChart3, Users } from 'lucide-
 const stats = [
   {
     icon: FileText,
-    title: 'AI automated updates for all company relevant regulation & policies documentation',
+    title: 'Actualizaciones automatizadas por IA para toda la documentación de regulaciones y políticas.',
   },
   {
     icon: TrendingDown,
-    title: '60%+ reduction in unmanaged legacy documents',
+    title: 'Reducción de más del 60% en documentos legados no gestionados.',
   },
   {
     icon: Share2,
-    title: 'Seamless integration with internal and external sources',
+    title: 'Integración fluida con fuentes internas y externas.',
   },
   {
     icon: Clock,
-    title: 'Significant time savings on audits & reviews',
+    title: 'Ahorros significativos de tiempo en auditorías y revisiones.',
   },
   {
     icon: BarChart3,
-    title: 'Fully traceable, real time compliance dashboards',
+    title: 'Tableros de cumplimiento en tiempo real totalmente rastreables.',
   },
   {
     icon: Users,
-    title: '<90% staff uptake on live deployments',
+    title: '>90% de adopción del personal en implementaciones reales.',
   },
 ];
 
@@ -65,7 +65,7 @@ export default function RealImpact() {
               className="mb-10"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                Real Impact,<br />Proven Outcomes
+                Impacto Real,<br />Resultados Probados
               </h2>
               <div className="w-16 h-1 bg-accent mt-4" />
             </motion.div>
@@ -108,7 +108,7 @@ export default function RealImpact() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="/images/real-impact.jpg"
-                alt="Healthcare professionals using MyStaff app"
+                alt="Profesionales de la salud usando la app Portal Staff"
                 className="w-full h-auto object-cover"
               />
               {/* Overlay gradient */}

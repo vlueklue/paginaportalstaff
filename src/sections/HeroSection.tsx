@@ -3,23 +3,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Heart, Pill, Factory, Landmark, GraduationCap } from 'lucide-react';
 
 const industries = [
-  { id: 'healthcare', name: 'Healthcare', icon: Heart, image: '/images/hero-healthcare.jpg' },
-  { id: 'pharmaceutical', name: 'Pharmaceutical', icon: Pill, image: '/images/hero-healthcare.jpg' },
-  { id: 'manufacturing', name: 'Manufacturing', icon: Factory, image: '/images/hero-healthcare.jpg' },
-  { id: 'finance', name: 'Finance', icon: Landmark, image: '/images/hero-healthcare.jpg' },
-  { id: 'education', name: 'Education', icon: GraduationCap, image: '/images/hero-education.jpg' },
+  { id: 'healthcare', name: 'Salud', icon: Heart, image: '/images/hero-healthcare.jpg' },
+  { id: 'pharmaceutical', name: 'Farmacéutico', icon: Pill, image: '/images/hero-healthcare.jpg' },
+  { id: 'manufacturing', name: 'Manufactura', icon: Factory, image: '/images/hero-healthcare.jpg' },
+  { id: 'finance', name: 'Finanzas', icon: Landmark, image: '/images/hero-healthcare.jpg' },
+  { id: 'education', name: 'Educación', icon: GraduationCap, image: '/images/hero-education.jpg' },
 ];
 
 const awards = [
-  { name: 'Hetty', subtext: 'Unexpected Innovation Awards 2022', color: 'bg-gradient-to-br from-pink-500 to-purple-600' },
-  { name: 'Health Tech Digital', subtext: 'WINNER AWARDS 2023', color: 'bg-gradient-to-br from-blue-500 to-cyan-500' },
-  { name: 'Workforce Finalist', subtext: '2024', color: 'bg-gradient-to-br from-green-500 to-teal-500' },
-  { name: 'HSJ Awards', subtext: 'FINALIST 2025', color: 'bg-gradient-to-br from-orange-500 to-red-500' },
+  { name: 'Hetty', subtext: 'Premios a la Innovación Inesperada 2022', color: 'bg-gradient-to-br from-pink-500 to-purple-600' },
+  { name: 'Health Tech Digital', subtext: 'PREMIOS GANADOR 2023', color: 'bg-gradient-to-br from-blue-500 to-cyan-500' },
+  { name: 'Finalista Workforce', subtext: '2024', color: 'bg-gradient-to-br from-green-500 to-teal-500' },
+  { name: 'Premios HSJ', subtext: 'FINALISTA 2025', color: 'bg-gradient-to-br from-orange-500 to-red-500' },
 ];
 
 const clients = [
-  { name: 'NHS Mid and South Essex', subtext: 'NHS Foundation Trust' },
-  { name: 'University Hospitals Bristol and Weston', subtext: 'NHS Foundation Trust' },
+  { name: 'NHS Mid and South Essex', subtext: 'Fundación NHS Trust' },
+  { name: 'University Hospitals Bristol and Weston', subtext: 'Fundación NHS Trust' },
   { name: 'North Bristol', subtext: 'NHS Trust' },
   { name: 'Nuffield Health', subtext: '' },
 ];
@@ -42,7 +42,7 @@ export default function HeroSection() {
         >
           <img
             src={activeImage}
-            alt="Hero background"
+            alt="Fondo Hero"
             className="w-full h-full object-cover"
           />
           {/* Gradient Overlay */}
@@ -63,49 +63,52 @@ export default function HeroSection() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-[42px] font-bold leading-tight mb-6"
+              transition={{ delay: 0.2 }}
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
             >
-              A critical tool to support frontline governance
+              Potenciando la <span className="text-accent underline decoration-white/20">Eficiencia</span> en la Primera Línea
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-lg text-white/90 mb-8 max-w-xl"
+              transition={{ delay: 0.3 }}
+              className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed"
             >
-              An award-winning AI driven platform redefining the way documents are managed and distributed for frontline workers.
+              Portal Staff es la plataforma líder para gestionar equipos operativos, asegurando cumplimiento, comunicación clara y procesos optimizados en tiempo real.
             </motion.p>
-            
-            <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg"
-            >
-              Try MyStaff app - See How It Works
-            </motion.button>
 
-            {/* Awards */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex flex-wrap gap-3 mt-10"
+              transition={{ delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 mb-20"
             >
-              {awards.map((award, index) => (
-                <div
-                  key={index}
-                  className={`${award.color} rounded-full w-20 h-20 flex flex-col items-center justify-center text-white text-center p-2 shadow-lg`}
-                >
-                  <span className="text-[10px] font-bold leading-tight">{award.name}</span>
-                  <span className="text-[8px] leading-tight mt-1">{award.subtext}</span>
-                </div>
-              ))}
+              <button className="bg-accent hover:bg-accent-hover text-primary font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center space-x-2 shadow-lg shadow-black/20">
+                <Play className="w-5 h-5 fill-current" />
+                <span>Ver Demo</span>
+              </button>
+              <button className="border-2 border-white/30 hover:border-white text-white font-bold px-8 py-4 rounded-full transition-all bg-white/10 backdrop-blur-sm">
+                Saber más
+              </button>
             </motion.div>
+
+            {/* Awards section */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {awards.map((award, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className={`${award.color} p-4 rounded-xl border border-white/10 flex flex-col items-center text-center`}
+                >
+                  <span className="text-white font-bold text-sm">{award.name}</span>
+                  <span className="text-white/80 text-[10px] uppercase font-medium mt-1">{award.subtext}</span>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
           {/* Right Content - Industry Selector */}
@@ -119,17 +122,17 @@ export default function HeroSection() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
               <img
                 src="/images/frame_02_8s.jpg"
-                alt="App preview"
+                alt="Vista previa de la app"
                 className="w-full h-48 object-cover"
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                 <button className="bg-white/90 hover:bg-white text-primary px-4 py-2 rounded-full flex items-center gap-2 transition-colors">
                   <Play className="w-4 h-4" />
-                  <span className="font-medium">Watch Now</span>
+                  <span className="font-medium">Ver ahora</span>
                 </button>
               </div>
               <div className="absolute top-4 right-4 text-white text-right">
-                <p className="text-sm font-medium">Life saving, Time saving, Resource saving app.</p>
+                <p className="text-sm font-medium">Una app que salva vidas, tiempo y recursos.</p>
               </div>
             </div>
 
@@ -143,15 +146,13 @@ export default function HeroSection() {
                     <button
                       key={industry.id}
                       onClick={() => setActiveIndustry(industry.id)}
-                      className={`w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-200 ${
-                        isActive
-                          ? 'bg-primary text-white shadow-md'
-                          : 'hover:bg-gray-50 text-gray-700'
-                      }`}
+                      className={`w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-200 ${isActive
+                        ? 'bg-primary text-white shadow-md'
+                        : 'hover:bg-gray-50 text-gray-700'
+                        }`}
                     >
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border-2 ${
-                        isActive ? 'border-white' : 'border-primary'
-                      }`}>
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center border-2 ${isActive ? 'border-white' : 'border-primary'
+                        }`}>
                         <Icon className={`w-6 h-6 ${isActive ? 'text-white' : 'text-primary'}`} />
                       </div>
                       <span className="text-lg font-medium">{industry.name}</span>

@@ -4,32 +4,32 @@ import { TrendingUp, Search, Scale, Users, Package } from 'lucide-react';
 const useCases = [
   {
     icon: TrendingUp,
-    title: 'Sales & Operations',
-    description: 'For pricing management, tariffs regulations, antitrust laws',
+    title: 'Ventas y Operaciones',
+    description: 'Para gestión de precios, regulaciones de tarifas, leyes antimonopolio',
     position: 'top',
   },
   {
     icon: Search,
-    title: 'Quality Control',
-    description: 'For product quality management regulation',
+    title: 'Control de Calidad',
+    description: 'Para la regulación de la gestión de calidad del producto',
     position: 'left-top',
   },
   {
     icon: Scale,
     title: 'Legal',
-    description: 'For risk mitigation, operational & economical regulations, reputation & fraud',
+    description: 'Para mitigación de riesgos, regulaciones operativas y económicas, reputación y fraude',
     position: 'left-bottom',
   },
   {
     icon: Users,
-    title: 'HR',
-    description: 'For code of conduct, employee security and internal communication',
+    title: 'Recursos Humanos',
+    description: 'Para código de conducta, seguridad del empleado y comunicación interna',
     position: 'right-bottom',
   },
   {
     icon: Package,
-    title: 'Supply Chain',
-    description: 'Development & equipment, environment, health & safety, customs regulation',
+    title: 'Cadena de Suministro',
+    description: 'Desarrollo y equipos, medio ambiente, salud y seguridad, regulación aduanera',
     position: 'right-top',
   },
 ];
@@ -100,7 +100,7 @@ export default function UseCases() {
                 'right-top': { top: '25%', left: '75%' },
               };
               const pos = positions[useCase.position];
-              
+
               return (
                 <motion.div
                   key={index}
@@ -109,8 +109,8 @@ export default function UseCases() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="absolute"
-                  style={{ 
-                    top: pos.top, 
+                  style={{
+                    top: pos.top,
                     left: pos.left,
                     transform: 'translate(-50%, -50%)'
                   }}
@@ -120,7 +120,7 @@ export default function UseCases() {
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-3 mx-auto">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    
+
                     {/* Content */}
                     <h3 className="text-primary font-bold text-center mb-2">{useCase.title}</h3>
                     <p className="text-gray-600 text-sm text-center leading-snug">{useCase.description}</p>

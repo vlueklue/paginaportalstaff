@@ -3,31 +3,31 @@ import { motion } from 'framer-motion';
 const features = [
   {
     number: '1',
-    title: 'Instant Access',
-    description: 'Reduces time-based risk exposure by giving staff immediate access to the latest guidance.',
+    title: 'Acceso Instantáneo',
+    description: 'Reduce la exposición al riesgo temporal al dar al personal acceso inmediato a la guía más reciente.',
     image: '/images/feature-instant-access.jpg',
-    highlight: 'immediate access',
+    highlight: 'acceso inmediato',
   },
   {
     number: '2',
-    title: 'High Uptake',
-    description: "Over 90% of staff use MyStaff app. A risk control only works if it's used - and this one is.",
+    title: 'Alta Adopción',
+    description: "Más del 90% del personal usa la aplicación Portal Staff. Un control de riesgo solo funciona si se usa, y este se usa.",
     image: '/images/feature-high-uptake.jpg',
     highlight: '90%',
   },
   {
     number: '3',
-    title: 'Material Depth',
-    description: 'Covers the full range of operational, and regulatory knowledge across the organisation.',
+    title: 'Profundidad de Material',
+    description: 'Cubre toda la gama de conocimientos operativos y regulatorios en toda la organización.',
     image: '/images/feature-material-depth.jpg',
-    highlight: 'operational, and regulatory knowledge',
+    highlight: 'conocimientos operativos y regulatorios',
   },
   {
     number: '4',
-    title: 'Material Compliance',
-    description: 'Ensures documents are accurate, current, and traceable automating policy lifecycle and oversight.',
+    title: 'Cumplimiento de Material',
+    description: 'Garantiza que los documentos sean precisos, actuales y rastreables, automatizando el ciclo de vida y la supervisión de las políticas.',
     image: '/images/feature-material-compliance.jpg',
-    highlight: 'accurate, current, and traceable',
+    highlight: 'precisos, actuales y rastreables',
   },
 ];
 
@@ -66,7 +66,7 @@ export default function PlatformFeatures() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            A tool for controlling knowledge, engagement, and compliance – <span className="text-red-500">in one platform</span>
+            Una herramienta para controlar el conocimiento, el compromiso y el cumplimiento – <span className="text-red-500">en una sola plataforma</span>
           </h2>
           <div className="w-16 h-1 bg-accent mt-4" />
         </motion.div>
@@ -95,18 +95,18 @@ export default function PlatformFeatures() {
                 />
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                
+
                 {/* Number Badge */}
                 <div className="absolute top-4 left-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                   {feature.number}
                 </div>
-                
+
                 {/* Title on Image */}
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-2xl font-bold text-white">{feature.title}</h3>
                 </div>
               </div>
-              
+
               {/* Description */}
               <div className="p-6 bg-white">
                 <p className="text-gray-700 leading-relaxed">

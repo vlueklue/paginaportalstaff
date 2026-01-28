@@ -2,12 +2,12 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const bulletPoints = [
-  'Designed around robust document governance – not just forms and checklists.',
-  'AI-driven categorization and metadata reduce manual admin and improve searchability.',
-  'Document lifecycle management includes author reminders, approval flows, and publishing oversight.',
-  'Alerts and notifications ensure staff are always working from the latest version.',
-  'Built-in audit trails and access history meet ISO and industry compliance standards.',
-  'Offline access enables field compliance in remote locations without signal or Wi-Fi.',
+  'Diseñado en torno a una gobernanza documental sólida, no solo formularios y listas de verificación.',
+  'La categorización y los metadatos impulsados por IA reducen la administración manual y mejoran la búsqueda.',
+  'La gestión del ciclo de vida de los documentos incluye recordatorios para autores, flujos de aprobación y supervisión de publicación.',
+  'Las alertas y notificaciones aseguran que el personal siempre trabaje con la versión más reciente.',
+  'Los registros de auditoría integrados y el historial de acceso cumplen con las normas ISO y los estándares de cumplimiento de la industria.',
+  'El acceso sin conexión permite el cumplimiento en el campo en ubicaciones remotas sin señal ni Wi-Fi.',
 ];
 
 export default function ComplianceApproach() {
@@ -23,10 +23,10 @@ export default function ComplianceApproach() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Our Compliance-First Document Management Approach
+              Nuestro Enfoque de Gestión Documental Basado en el Cumplimiento
             </h2>
             <div className="w-16 h-1 bg-accent mb-8" />
-            
+
             <ul className="space-y-4">
               {bulletPoints.map((point, index) => (
                 <motion.li
@@ -63,7 +63,7 @@ export default function ComplianceApproach() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Floating badges */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
@@ -77,7 +77,7 @@ export default function ComplianceApproach() {
                   <span className="text-sm font-medium text-gray-700">ISO Compliant</span>
                 </div>
               </motion.div>
-              
+
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}

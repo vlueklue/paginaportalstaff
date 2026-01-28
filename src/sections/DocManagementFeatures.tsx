@@ -4,35 +4,35 @@ import { Bell, FileStack, Tag, FileSearch, ClipboardCheck, Smartphone, Clipboard
 const features = [
   {
     icon: Bell,
-    title: 'Staff alerts for new/updated documents',
+    title: 'Alertas al personal por documentos nuevos/actualizados',
   },
   {
     icon: FileStack,
-    title: 'Automated version control & document history',
+    title: 'Control de versiones automatizado e historial de documentos',
   },
   {
     icon: Tag,
-    title: 'Auto-characterisation & tagging (AI-based)',
+    title: 'Autocaracterización y etiquetado (basado en IA)',
   },
   {
     icon: FileSearch,
-    title: 'Searchable PDF rendering with mobile optimization',
+    title: 'Visualización de PDF con búsqueda y optimización móvil',
   },
   {
     icon: ClipboardCheck,
-    title: 'Document creation approval & author reminders',
+    title: 'Aprobación de creación de documentos y recordatorios para autores',
   },
   {
     icon: Smartphone,
-    title: 'Mobile-friendly policy & guideline access',
+    title: 'Acceso móvil a políticas y directrices',
   },
   {
     icon: ClipboardList,
-    title: 'Audit-ready access logs & compliance tracking',
+    title: 'Registros de acceso listos para auditoría y seguimiento de cumplimiento',
   },
   {
     icon: WifiOff,
-    title: 'Offline access to critical compliance documents',
+    title: 'Acceso sin conexión a documentos críticos de cumplimiento',
   },
 ];
 
@@ -71,11 +71,11 @@ export default function DocManagementFeatures() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Document Management and compliance features
+            Gestión Documental y características de cumplimiento
           </h2>
           <div className="w-16 h-1 bg-accent mb-6" />
           <p className="text-gray-600 text-lg max-w-3xl">
-            MyStaff app stands out with dedicated features from document lifecycle control, regulatory compliance and easy of access in both field and office environments, critical to highly regulated industries*
+            La aplicación Portal Staff destaca con funciones dedicadas al control del ciclo de vida de los documentos, el cumplimiento normativo y la facilidad de acceso tanto en el campo como en la oficina, algo crítico para industrias altamente reguladas*
           </p>
         </motion.div>
 
@@ -93,10 +93,10 @@ export default function DocManagementFeatures() {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                whileHover={{ 
-                  y: -4, 
+                whileHover={{
+                  y: -4,
                   borderColor: '#f4b942',
-                  transition: { duration: 0.2 } 
+                  transition: { duration: 0.2 }
                 }}
                 className="bg-card-blue rounded-2xl p-6 border-2 border-accent shadow-card hover:shadow-card-hover transition-all duration-300"
               >
@@ -106,7 +106,7 @@ export default function DocManagementFeatures() {
                     <Icon className="w-8 h-8 text-primary" />
                   </div>
                 </div>
-                
+
                 {/* Title */}
                 <h3 className="text-white text-center font-semibold text-lg leading-snug">
                   {feature.title}

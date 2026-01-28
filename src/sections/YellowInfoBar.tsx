@@ -15,7 +15,7 @@ export default function YellowInfoBar() {
             className="bg-black rounded-2xl p-6 md:p-8"
           >
             <p className="text-white text-base md:text-lg leading-relaxed">
-              Frontline teams in production, quality, and safety roles are under constant pressure to stay compliant with complex regulations, but the documents they rely on, like SOPs and safety protocols, are often <span className="font-bold">buried, outdated, or inconsistent</span>.
+              Los equipos de primera línea en roles de producción, calidad y seguridad están bajo presión constante para cumplir con regulaciones complejas, pero los documentos en los que confían, como los PNT y los protocolos de seguridad, a menudo están <span className="font-bold">enterrados, desactualizados o son inconsistentes</span>.
             </p>
           </motion.div>
 
@@ -41,7 +41,7 @@ export default function YellowInfoBar() {
             className="bg-white rounded-2xl p-6 md:p-8"
           >
             <p className="text-primary text-base md:text-lg leading-relaxed">
-              That's where MyStaff app comes in: it puts the right version in the right hands instantly, tracks compliance, automatically, and <span className="font-bold text-primary-dark">keeps your whole team aligned and audit-ready</span>.
+              Ahí es donde entra la aplicación Portal Staff: pone la versión correcta en las manos adecuadas al instante, rastrea el cumplimiento automáticamente y <span className="font-bold text-primary-dark">mantiene a todo su equipo alineado y listo para auditorías</span>.
             </p>
           </motion.div>
         </div>

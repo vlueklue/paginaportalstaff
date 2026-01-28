@@ -12,23 +12,23 @@ export default function Footer() {
           className="text-center"
         >
           <div className="flex flex-wrap justify-center gap-4 mb-4">
-            <a 
-              href="#accessibility" 
+            <a
+              href="#accessibility"
               className="text-white/80 hover:text-white transition-colors text-sm"
             >
-              Accessibility Statement
+              Declaración de Accesibilidad
             </a>
             <span className="text-white/40">|</span>
-            <a 
-              href="#privacy" 
+            <a
+              href="#privacy"
               className="text-white/80 hover:text-white transition-colors text-sm"
             >
-              Privacy Policy
+              Política de Privacidad
             </a>
           </div>
-          
+
           <p className="text-white/60 text-sm">
-            © 2025 Dilgram. All rights reserved.
+            © 2025 Portal Staff. Todos los derechos reservados.
           </p>
         </motion.div>
       </div>

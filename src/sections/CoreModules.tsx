@@ -2,44 +2,44 @@ import { motion } from 'framer-motion';
 
 const modules = [
   {
-    title: 'Policies & Procedures',
-    description: 'Intelligent access, version control, and compliance tracking',
+    title: 'Políticas y Procedimientos',
+    description: 'Acceso inteligente, control de versiones y seguimiento de cumplimiento',
     image: '/images/frame_02_8s.jpg',
     type: 'phone',
   },
   {
-    title: 'Document Creation',
-    description: 'End-to-end workflow with full audit trails',
+    title: 'Creación de Documentos',
+    description: 'Flujo de trabajo integral con registros de auditoría completos',
     image: '/images/frame_05_20s.jpg',
     type: 'desktop',
   },
   {
-    title: 'Customer Information',
-    description: 'Manage & distribute customer-facing materials (leaflets, posters)',
+    title: 'Información del Cliente',
+    description: 'Gestione y distribuya materiales para clientes (folletos, carteles)',
     image: '/images/frame_06_23s.jpg',
     type: 'phone',
   },
   {
-    title: 'App',
-    description: 'Mobile & web access with alerts, favorites & offline mode',
+    title: 'Aplicación',
+    description: 'Acceso móvil y web con alertas, favoritos y modo fuera de línea',
     image: '/images/frame_02_8s.jpg',
     type: 'phone',
   },
   {
-    title: 'Analytics',
-    description: 'Real-time compliance dashboards & engagement reporting',
+    title: 'Analítica',
+    description: 'Tableros de cumplimiento en tiempo real e informes de compromiso',
     image: '/images/frame_05_20s.jpg',
     type: 'desktop',
   },
   {
-    title: 'Notifications',
-    description: 'Automated alerts for new docs, updates & compliance issues',
+    title: 'Notificaciones',
+    description: 'Alertas automatizadas para nuevos documentos, actualizaciones y problemas de cumplimiento',
     image: '/images/frame_06_23s.jpg',
     type: 'notification',
   },
   {
-    title: 'QR Code-Based Access',
-    description: 'Instant, contactless access via QR codes—ideal for single-use & frontline use',
+    title: 'Acceso por Código QR',
+    description: 'Acceso instantáneo y sin contacto mediante códigos QR, ideal para un solo uso y personal de primera línea',
     image: '/images/frame_12_66s.jpg',
     type: 'qr',
   },
@@ -80,7 +80,7 @@ export default function CoreModules() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            Core Product Modules
+            Módulos Principales del Producto
           </h2>
           <div className="w-16 h-1 bg-accent mt-4" />
         </motion.div>
@@ -108,7 +108,7 @@ export default function CoreModules() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              
+
               {/* Content Section */}
               <div className="bg-card-blue p-5">
                 <h3 className="text-white font-bold text-lg mb-2">{module.title}</h3>
