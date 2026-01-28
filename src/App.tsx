@@ -7,9 +7,6 @@ import PlatformFeatures from './sections/PlatformFeatures';
 import DocManagementFeatures from './sections/DocManagementFeatures';
 import UseCases from './sections/UseCases';
 import ComplianceApproach from './sections/ComplianceApproach';
-import SavingsCalculator from './sections/SavingsCalculator';
-import CoreModules from './sections/CoreModules';
-import AwardsSection from './sections/AwardsSection';
 import RealImpact from './sections/RealImpact';
 import FooterCTA from './sections/FooterCTA';
 import Footer from './sections/Footer';
@@ -29,10 +26,10 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar scrolled={scrolled} />
-      
+
       <main>
         <HeroSection />
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +38,7 @@ function App() {
         >
           <YellowInfoBar />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +47,7 @@ function App() {
         >
           <PlatformFeatures />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +56,7 @@ function App() {
         >
           <DocManagementFeatures />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +65,7 @@ function App() {
         >
           <UseCases />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,16 +74,9 @@ function App() {
         >
           <ComplianceApproach />
         </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-        >
-          <SavingsCalculator />
-        </motion.div>
-        
+
+
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,16 +85,9 @@ function App() {
         >
           <CoreModules />
         </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-        >
-          <AwardsSection />
-        </motion.div>
-        
+
+
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +96,7 @@ function App() {
         >
           <RealImpact />
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +105,7 @@ function App() {
         >
           <FooterCTA />
         </motion.div>
-        
+
         <Footer />
       </main>
     </div>

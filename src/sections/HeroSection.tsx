@@ -10,12 +10,7 @@ const industries = [
   { id: 'education', name: 'Educación', icon: GraduationCap, image: '/images/hero-education.jpg' },
 ];
 
-const awards = [
-  { name: 'Hetty', subtext: 'Premios a la Innovación Inesperada 2022', color: 'bg-gradient-to-br from-pink-500 to-purple-600' },
-  { name: 'Health Tech Digital', subtext: 'PREMIOS GANADOR 2023', color: 'bg-gradient-to-br from-blue-500 to-cyan-500' },
-  { name: 'Finalista Workforce', subtext: '2024', color: 'bg-gradient-to-br from-green-500 to-teal-500' },
-  { name: 'Premios HSJ', subtext: 'FINALISTA 2025', color: 'bg-gradient-to-br from-orange-500 to-red-500' },
-];
+
 
 const clients = [
   { name: 'NHS Mid and South Essex', subtext: 'Fundación NHS Trust' },
@@ -82,7 +77,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 mb-20"
+              className="flex flex-col sm:flex-row gap-4"
             >
               <button className="bg-accent hover:bg-accent-hover text-primary font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center space-x-2 shadow-lg shadow-black/20">
                 <Play className="w-5 h-5 fill-current" />
@@ -93,22 +88,7 @@ export default function HeroSection() {
               </button>
             </motion.div>
 
-            {/* Awards section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {awards.map((award, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className={`${award.color} p-4 rounded-xl border border-white/10 flex flex-col items-center text-center`}
-                >
-                  <span className="text-white font-bold text-sm">{award.name}</span>
-                  <span className="text-white/80 text-[10px] uppercase font-medium mt-1">{award.subtext}</span>
-                </motion.div>
-              ))}
-            </div>
+
           </motion.div>
 
           {/* Right Content - Industry Selector */}
