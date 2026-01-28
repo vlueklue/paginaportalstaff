@@ -56,7 +56,7 @@ export default function HeroSection() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6"
             >
-              Potenciando la <span className="text-secondary underline decoration-primary/20">Eficiencia</span> en la Primera Línea
+              Potenciando la <span className="text-accent underline decoration-primary/20">Eficiencia</span> en la Primera Línea
             </motion.h1>
 
             <motion.p
