@@ -7,6 +7,7 @@ import PlatformFeatures from './sections/PlatformFeatures';
 import DocManagementFeatures from './sections/DocManagementFeatures';
 import UseCases from './sections/UseCases';
 import ComplianceApproach from './sections/ComplianceApproach';
+import CoreModules from './sections/CoreModules';
 import RealImpact from './sections/RealImpact';
 import FooterCTA from './sections/FooterCTA';
 import Footer from './sections/Footer';
