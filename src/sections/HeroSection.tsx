@@ -12,12 +12,7 @@ const industries = [
 
 
 
-const clients = [
-  { name: 'NHS Mid and South Essex', subtext: 'Fundación NHS Trust' },
-  { name: 'University Hospitals Bristol and Weston', subtext: 'Fundación NHS Trust' },
-  { name: 'North Bristol', subtext: 'NHS Trust' },
-  { name: 'Nuffield Health', subtext: '' },
-];
+
 
 export default function HeroSection() {
   const [activeIndustry, setActiveIndustry] = useState('healthcare');
@@ -40,8 +35,8 @@ export default function HeroSection() {
             alt="Fondo Hero"
             className="w-full h-full object-cover"
           />
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent" />
+          {/* White Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
         </motion.div>
       </AnimatePresence>
 
@@ -59,16 +54,16 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6"
             >
-              Potenciando la <span className="text-accent underline decoration-white/20">Eficiencia</span> en la Primera Línea
+              Potenciando la <span className="text-secondary underline decoration-primary/20">Eficiencia</span> en la Primera Línea
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl leading-relaxed"
+              className="text-lg md:text-xl text-primary/80 mb-10 max-w-2xl leading-relaxed"
             >
               Portal Staff es la plataforma líder para gestionar equipos operativos, asegurando cumplimiento, comunicación clara y procesos optimizados en tiempo real.
             </motion.p>
@@ -83,7 +78,7 @@ export default function HeroSection() {
                 <Play className="w-5 h-5 fill-current" />
                 <span>Ver Demo</span>
               </button>
-              <button className="border-2 border-white/30 hover:border-white text-white font-bold px-8 py-4 rounded-full transition-all bg-white/10 backdrop-blur-sm">
+              <button className="border-2 border-primary/20 hover:border-primary text-primary font-bold px-8 py-4 rounded-full transition-all bg-primary/5 backdrop-blur-sm">
                 Saber más
               </button>
             </motion.div>
@@ -142,15 +137,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Client Logos */}
-            <div className="text-right space-y-2">
-              {clients.map((client, index) => (
-                <div key={index} className="text-white">
-                  <p className="font-bold text-lg">{client.name}</p>
-                  {client.subtext && <p className="text-sm text-white/80">{client.subtext}</p>}
-                </div>
-              ))}
-            </div>
+
           </motion.div>
         </div>
       </div>
