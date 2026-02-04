@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Check, Star, Users, Brain, Zap, DollarSign, LifeBuoy, RefreshCcw } from 'lucide-react';
+import { Star, Brain, Zap, DollarSign, LifeBuoy, RefreshCcw } from 'lucide-react';
 
 const differentiators = [
     {

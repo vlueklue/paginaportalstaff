@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, TrendingUp, AlertTriangle, Users } from 'lucide-react';
+import { TrendingUp, AlertTriangle, Users } from 'lucide-react';
 
 export default function StatisticsSection() {
     return (
