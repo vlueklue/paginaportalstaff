@@ -56,7 +56,7 @@ export default function HeroSection() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6"
             >
-              Potenciando la <span className="text-accent underline decoration-primary/20">Eficiencia</span> en la Primera Línea
+              Gestión Inteligente de <span className="text-accent underline decoration-primary/20">Capital Humano</span>, Diseñada para la PYME Mexicana
             </motion.h1>
 
             <motion.p
@@ -65,7 +65,7 @@ export default function HeroSection() {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-primary/80 mb-10 max-w-2xl leading-relaxed"
             >
-              Portal Staff es la plataforma líder para gestionar equipos operativos, asegurando cumplimiento, comunicación clara y procesos optimizados en tiempo real.
+              Centraliza tu equipo, procesos y conocimiento en una sola plataforma intuitiva. Sin curva de aprendizaje, sin complicaciones.
             </motion.p>
 
             <motion.div
@@ -75,11 +75,11 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <button className="bg-accent hover:bg-accent-hover text-primary font-bold px-8 py-4 rounded-full transition-all flex items-center justify-center space-x-2 shadow-lg shadow-black/20">
-                <Play className="w-5 h-5 fill-current" />
-                <span>Ver Demo</span>
+                <span>Agenda una demo gratis</span>
               </button>
-              <button className="border-2 border-primary/20 hover:border-primary text-primary font-bold px-8 py-4 rounded-full transition-all bg-primary/5 backdrop-blur-sm">
-                Saber más
+              <button className="border-2 border-primary/20 hover:border-primary text-primary font-bold px-8 py-4 rounded-full transition-all bg-primary/5 backdrop-blur-sm flex items-center justify-center gap-2">
+                <Play className="w-5 h-5 fill-current" />
+                <span>Ver cómo funciona</span>
               </button>
             </motion.div>
 

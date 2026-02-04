@@ -13,21 +13,30 @@ export default function FooterCTA() {
           className="bg-primary py-16 px-8 md:px-16 flex flex-col justify-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">
-            Hablemos
+            Transforma la Gestión de tu Capital Humano Hoy
           </h2>
           <div className="w-16 h-1 bg-accent mb-6" />
 
-          <p className="text-white text-lg mb-8 max-w-md">
-            Descubra cómo la aplicación Portal Staff puede transformar la gobernanza en su organización.
+          <p className="text-white text-lg mb-8 max-w-md font-medium">
+            Interfaz intuitiva • Todo en uno • Soporte local
           </p>
 
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="bg-accent hover:bg-accent-hover text-primary-dark px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg w-fit"
-          >
-            Solicitar una Demo
-          </motion.button>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-accent hover:bg-accent-hover text-primary-dark px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg text-center"
+            >
+              Comienza tu prueba gratis
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-transparent border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 text-center"
+            >
+              Agenda una demo
+            </motion.button>
+          </div>
         </motion.div>
 
         {/* Right Content - Image */}
